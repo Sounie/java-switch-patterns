@@ -1,0 +1,1 @@
+Playing around with Java 17 preview feature for pattern matching of switch statement.
