@@ -13,8 +13,9 @@ class TryingSwitchPatternsTest {
 
         assertEquals("Hello int 123", tryingSwitchPatterns.doMatchStuff(myInt));
 
-        int int100 = 100;
         assertEquals("Int value 100", tryingSwitchPatterns.doMatchStuff(100));
+
+        assertEquals("Int value 500", tryingSwitchPatterns.doMatchStuff(500));
     }
 
     @Test

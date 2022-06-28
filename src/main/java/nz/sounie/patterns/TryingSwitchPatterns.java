@@ -6,10 +6,9 @@ public class TryingSwitchPatterns {
         // Cannot mix and match a literal value alongside pattern
         return switch (thing) {
             case Integer i ->
-                // Literal matching
+                // Literal matching can be applied in separate switch, where we know the type
                 switch (i) {
-                    case 100 -> "Int value 100";
-                    case 500 -> "Int value 500";
+                    case 100, 500 -> "Int value " + i;
                     default -> "Hello int " + i;
                 };
 
