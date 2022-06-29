@@ -33,4 +33,11 @@ class TryingSwitchPatternsTest {
 
         assertEquals("Didn't find a match, so defaulting", tryingSwitchPatterns.doMatchStuff("Some string"));
     }
+
+    @Test
+    void nullValue() {
+        TryingSwitchPatterns tryingSwitchPatterns = new TryingSwitchPatterns();
+
+        assertEquals("Found a null", tryingSwitchPatterns.doMatchStuff(null));
+    }
 }

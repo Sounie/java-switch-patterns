@@ -13,6 +13,7 @@ public class TryingSwitchPatterns {
                 };
 
             case Number n ->  "Some non-int number " + n;
+            case null -> "Found a null"; // Example of something that won't match as 'default'
             default -> "Didn't find a match, so defaulting";
         };
     }
