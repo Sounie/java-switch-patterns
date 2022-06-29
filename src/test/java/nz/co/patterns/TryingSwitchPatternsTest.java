@@ -1,4 +1,4 @@
-package patterns;
+package nz.co.patterns;
 
 import nz.sounie.patterns.TryingSwitchPatterns;
 import org.junit.jupiter.api.Test;
