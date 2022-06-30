@@ -1,5 +1,6 @@
 package nz.co.patterns;
 
+import nz.sounie.patterns.SomeRecord;
 import nz.sounie.patterns.TryingSwitchPatterns;
 import org.junit.jupiter.api.Test;
 
@@ -39,5 +40,12 @@ class TryingSwitchPatternsTest {
         TryingSwitchPatterns tryingSwitchPatterns = new TryingSwitchPatterns();
 
         assertEquals("Found a null", tryingSwitchPatterns.doMatchStuff(null));
+    }
+
+    @Test
+    void aRecord() {
+        TryingSwitchPatterns tryingSwitchPatterns = new TryingSwitchPatterns();
+
+        assertEquals("A record named Trevor with size 15", tryingSwitchPatterns.doMatchStuff(new SomeRecord("Trevor", 15)));
     }
 }
